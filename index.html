@@ -8,20 +8,24 @@
     body {
       margin: 0;
       font-family: Arial, sans-serif;
-      background-color: #f4f4f4;
-      color: #333;
+      background-color: #111; /* negro de fondo */
+      color: #fff; /* texto blanco */
     }
 
     header {
-      background-color: #0078d7;
+      background: linear-gradient(90deg, #4b0082, #8a2be2); /* morado degradado */
       color: #fff;
       text-align: center;
       padding: 1.5rem;
+      border-bottom: 4px solid #e60026; /* rojo intenso */
+      text-transform: uppercase;
+      letter-spacing: 2px;
     }
 
     header h1 {
       margin: 0;
-      font-size: 2rem;
+      font-size: 2.5rem;
+      text-shadow: 2px 2px #000;
     }
 
     .container {
@@ -34,31 +38,41 @@
     }
 
     .section {
-      background-color: #fff;
+      background-color: #1c1c1c; /* gris oscuro */
       border-radius: 10px;
       padding: 1.5rem;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      box-shadow: 0 0 10px rgba(255, 0, 0, 0.2); /* leve brillo rojo */
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .section:hover {
+      transform: scale(1.02);
+      box-shadow: 0 0 15px rgba(138, 43, 226, 0.6); /* brillo morado */
     }
 
     .section h2 {
-      color: #0078d7;
-      border-bottom: 2px solid #0078d7;
+      color: #e60026; /* rojo */
+      border-bottom: 2px solid #8a2be2; /* línea morada */
       padding-bottom: 0.5rem;
+      text-transform: capitalize;
     }
 
     .section p {
       line-height: 1.6;
       margin-top: 1rem;
+      color: #f5f5f5;
     }
 
     footer {
       text-align: center;
       padding: 1rem;
-      background-color: #0078d7;
+      background: linear-gradient(90deg, #8a2be2, #4b0082);
       color: #fff;
+      border-top: 4px solid #e60026;
+      font-weight: bold;
     }
 
-    /* Heavyjabones */
+    /* Responsive */
     @media (min-width: 768px) {
       .container {
         grid-template-columns: repeat(2, 1fr);
@@ -87,7 +101,7 @@
     </section>
     <section class="section">
       <h2>jabones pequeños</h2>
-      <p>Tamaño compacto, esencia intensa. Ideales como regalo, detalle o para llevar de viaje. Conservan la fragancia artesanal de Heavyjabones y destacan por sus formas mini de calaveras, huesos o calabacitas..</p>
+      <p>Tamaño compacto, esencia intensa. Ideales como regalo, detalle o para llevar de viaje. Conservan la fragancia artesanal de Heavyjabones y destacan por sus formas mini de calaveras, huesos o calabacitas.</p>
     </section>
   </main>
   <footer>
