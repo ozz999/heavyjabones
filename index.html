@@ -13,18 +13,19 @@
     }
 
     header {
-      background-color: #b2ffff; /* aguamarina muy clara */
-      color: #800080; /* morado */
+      background-color: #0a1a3c; /* azul elegante oscuro */
+      color: #a020f0; /* morado elegante */
       text-align: center;
       padding: 1.5rem;
-      border-bottom: 4px solid #9370db; /* línea morada suave */
+      border-bottom: 4px solid #ff4c4c; /* línea roja */
     }
 
     header h1 {
       margin: 0;
       font-size: 2.5rem;
       text-transform: uppercase;
-      color: #800080; /* morado principal */
+      color: #a020f0; /* morado elegante */
+      text-shadow: 1px 1px #ff4c4c; /* leve sombra roja */
     }
 
     .container {
@@ -37,21 +38,24 @@
     }
 
     .section {
-      background-color: #e0ffff; /* aguamarina clara */
+      background-color: #13294b; /* azul elegante */
       border-radius: 10px;
       padding: 1.5rem;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-      transition: transform 0.3s, box-shadow 0.3s;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+      transition: transform 0.3s, box-shadow 0.3s, border 0.3s;
+      border: 2px solid transparent;
+      color: #ffffff; /* texto blanco dentro de secciones */
     }
 
     .section:hover {
       transform: scale(1.02);
-      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+      box-shadow: 0 0 15px rgba(255, 76, 76, 0.4); /* efecto rojo al pasar */
+      border: 2px solid #ff4c4c; /* borde rojo */
     }
 
     .section h2 {
-      color: #32cd32; /* verde claro (limegreen) */
-      border-bottom: 2px solid #32cd32;
+      color: #a020f0; /* morado elegante */
+      border-bottom: 2px solid #ff4c4c; /* línea roja */
       padding-bottom: 0.5rem;
       text-transform: capitalize;
     }
@@ -59,15 +63,15 @@
     .section p {
       line-height: 1.6;
       margin-top: 1rem;
-      color: #000000; /* texto negro */
+      color: #ffffff; /* texto blanco */
     }
 
     footer {
       text-align: center;
       padding: 1rem;
-      background-color: #b2ffff; /* aguamarina muy clara */
-      color: #800080; /* morado */
-      border-top: 4px solid #9370db;
+      background-color: #0a1a3c; /* azul elegante oscuro */
+      color: #a020f0; /* morado elegante */
+      border-top: 4px solid #ff4c4c; /* rojo */
       font-weight: bold;
     }
 
@@ -79,37 +83,7 @@
     }
 
     @media (min-width: 1024px) {
-      .container {
-        grid-template-columns: repeat(3, 1fr);
-      }
-    }
-  </style>
-</head>
-<body>
-  <header>
-    <h1>HEAVYJABONES</h1>
-  </header>
-  <main class="container">
-    <section class="section">
-      <h2>jabones grandes</h2>
-      <p>Poder y aroma en cada baño. Con fragancias intensas de maracuyá, avena o frutos rojos, ofrecen una limpieza profunda y duradera. Sus formas —como calaveras o tumbas— los hacen ideales para quienes aman lo original y diferente.</p>
-    </section>
-    <section class="section">
-      <h2>jabones medianos</h2>
-      <p>Equilibrio entre comodidad y duración. Espuma suave y aromas naturales de avena relajante, frutos rojos vibrantes o maracuyá tropical. Con diseños únicos como huesos, murciélagos y calabazas, son perfectos para uso diario.</p>
-    </section>
-    <section class="section">
-      <h2>jabones pequeños</h2>
-      <p>Tamaño compacto, esencia intensa. Ideales como regalo, detalle o para llevar de viaje. Conservan la fragancia artesanal de Heavyjabones y destacan por sus formas mini de calaveras, huesos o calabacitas.</p>
-    </section>
-  </main>
-  <footer>
-    © 2025 Alejandro Marin y Camilo Contreras
-  </footer>
-</body>
-</html>
-
-
+      .cont
 
 
 
